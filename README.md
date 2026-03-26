@@ -4,7 +4,7 @@
 
 This skill is descended from the original MCP-based implementation in
 [`blazickjp/arxiv-mcp-server`](https://github.com/blazickjp/arxiv-mcp-server),
-adapted into a standalone Agent Skill workflow.
+adapted into a standalone Agent Skill workflow according to the [Claude Skill specification](https://agentskills.io/specification}.
 
 It provides:
 
