@@ -1,0 +1,21 @@
+{
+  "query": "\"transformer architecture\"",
+  "total_results": 2,
+  "papers": [
+    {
+      "id": "2401.12345",
+      "title": "Example Transformer Paper",
+      "authors": [
+        "Author One",
+        "Author Two"
+      ],
+      "abstract": "Example abstract.",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2024-01-15T00:00:00+00:00",
+      "url": "https://arxiv.org/pdf/2401.12345"
+    }
+  ]
+}

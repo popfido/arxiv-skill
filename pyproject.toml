@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arxiv-skill"
+version = "0.1.0"
+description = "Pure Agent Skill for arXiv search, caching, and paper analysis workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Joseph Blazick", email = "blazickjp@amazon.com" }
+]
+dependencies = [
+    "arxiv>=2.1.0",
+    "httpx>=0.24.0",
+    "python-dateutil>=2.8.2",
+    "pymupdf4llm>=0.0.17",
+    "pymupdf-layout>=1.26.6",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=9.0.0",
+    "pytest-mock>=3.15.0",
+    "skills-ref>=0.1.1",
+]
+dev = [
+    "black>=25.1.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[project.scripts]
+arxiv-skill-search = "scripts.search_arxiv:main"
+arxiv-skill-cache = "scripts.cache_paper:main"
+arxiv-skill-list = "scripts.list_cached_papers:main"
+arxiv-skill-read = "scripts.read_cached_paper:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.cache
+  | \.uv-cache
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
