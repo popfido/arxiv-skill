@@ -2,6 +2,10 @@
 
 `arxiv-skill` is a pure Agent Skill for arXiv discovery and paper analysis.
 
+This skill is descended from the original MCP-based implementation in
+[`blazickjp/arxiv-mcp-server`](https://github.com/blazickjp/arxiv-mcp-server),
+adapted into a standalone Agent Skill workflow.
+
 It provides:
 
 - `SKILL.md` as the root instruction surface
@@ -85,4 +89,4 @@ The canonical skill instructions live in `SKILL.md`. Supporting details live in:
 
 ## License
 
-MIT. See `LICENSE`.
+Apache License 2.0. See `LICENSE`.
