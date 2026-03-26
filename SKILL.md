@@ -1,7 +1,7 @@
 ---
 name: arxiv-skill
 description: Search arXiv, cache papers locally as markdown, inspect cached papers, and perform structured paper analysis. Use when the task involves finding arXiv papers, downloading a paper by ID, reading cached markdown, or doing literature review and deep paper analysis.
-license: MIT
+license: Apache-2.0
 compatibility: Requires Python 3.11+, uv, internet access for arXiv search/download, and local filesystem write access for cached papers.
 ---
 

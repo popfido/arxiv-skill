@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Pure Agent Skill for arXiv search, caching, and paper analysis workflows"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 authors = [
     { name = "Joseph Blazick", email = "blazickjp@amazon.com" }
 ]
