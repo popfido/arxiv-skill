@@ -30,6 +30,11 @@ dev = [
     "black>=25.1.0"
 ]
 
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
