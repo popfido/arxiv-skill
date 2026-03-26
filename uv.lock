@@ -50,6 +50,11 @@ test = [
     { name = "skills-ref" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "black" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "arxiv", specifier = ">=2.1.0" },
@@ -63,6 +68,9 @@ requires-dist = [
     { name = "skills-ref", marker = "extra == 'test'", specifier = ">=0.1.1" },
 ]
 provides-extras = ["test", "dev"]
+
+[package.metadata.requires-dev]
+dev = [{ name = "black", specifier = ">=25.1.0" }]
 
 [[package]]
 name = "black"
