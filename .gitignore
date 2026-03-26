@@ -45,3 +45,4 @@ ENV/
 
 # Local development settings
 .env
+research.md
